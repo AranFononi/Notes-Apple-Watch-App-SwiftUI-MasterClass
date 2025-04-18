@@ -61,7 +61,3 @@ struct DetailView: View {
     }
 }
 
-#Preview {
-    var sampleData: Note = Note(id: UUID(), text: "Hello, World!")
-    DetailView(note: sampleData, count: 5, index: 1)
-}
