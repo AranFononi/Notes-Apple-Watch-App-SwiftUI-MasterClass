@@ -17,16 +17,7 @@ struct DetailView: View {
         VStack(alignment: .center, spacing: 3) {
             
             // Header
-            HStack {
-                Capsule()
-                    .frame(height: 1)
-                
-                Image(systemName: "note.text")
-                
-                Capsule()
-                    .frame(height: 1)
-            } //: HStack
-            .foregroundStyle(.accent)
+           HeaderView(title: "")
             
             // Content
             Spacer()
