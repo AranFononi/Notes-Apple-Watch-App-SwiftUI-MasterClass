@@ -6,36 +6,7 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		A42BA9162DB269090076FC97 /* Notes SwiftUI MasterClass Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A42BA9152DB269090076FC97 /* Notes SwiftUI MasterClass Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		A42BA9172DB269090076FC97 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A42BA9092DB269090076FC97 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A42BA9142DB269090076FC97;
-			remoteInfo = "Notes SwiftUI MasterClass Watch App";
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		A42BA9252DB2690B0076FC97 /* Embed Watch Content */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
-			dstSubfolderSpec = 16;
-			files = (
-				A42BA9162DB269090076FC97 /* Notes SwiftUI MasterClass Watch App.app in Embed Watch Content */,
-			);
-			name = "Embed Watch Content";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		A42BA90F2DB269090076FC97 /* Notes SwiftUI MasterClass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Notes SwiftUI MasterClass.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A42BA9152DB269090076FC97 /* Notes SwiftUI MasterClass Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Notes SwiftUI MasterClass Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -69,7 +40,6 @@
 		A42BA9102DB269090076FC97 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A42BA90F2DB269090076FC97 /* Notes SwiftUI MasterClass.app */,
 				A42BA9152DB269090076FC97 /* Notes SwiftUI MasterClass Watch App.app */,
 			);
 			name = Products;
@@ -78,25 +48,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A42BA90E2DB269090076FC97 /* Notes SwiftUI MasterClass */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A42BA9262DB2690B0076FC97 /* Build configuration list for PBXNativeTarget "Notes SwiftUI MasterClass" */;
-			buildPhases = (
-				A42BA90D2DB269090076FC97 /* Resources */,
-				A42BA9252DB2690B0076FC97 /* Embed Watch Content */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A42BA9182DB269090076FC97 /* PBXTargetDependency */,
-			);
-			name = "Notes SwiftUI MasterClass";
-			packageProductDependencies = (
-			);
-			productName = "Notes SwiftUI MasterClass";
-			productReference = A42BA90F2DB269090076FC97 /* Notes SwiftUI MasterClass.app */;
-			productType = "com.apple.product-type.application.watchapp2-container";
-		};
 		A42BA9142DB269090076FC97 /* Notes SwiftUI MasterClass Watch App */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A42BA9222DB2690B0076FC97 /* Build configuration list for PBXNativeTarget "Notes SwiftUI MasterClass Watch App" */;
@@ -129,9 +80,6 @@
 				LastSwiftUpdateCheck = 1630;
 				LastUpgradeCheck = 1630;
 				TargetAttributes = {
-					A42BA90E2DB269090076FC97 = {
-						CreatedOnToolsVersion = 16.3;
-					};
 					A42BA9142DB269090076FC97 = {
 						CreatedOnToolsVersion = 16.3;
 					};
@@ -151,20 +99,12 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A42BA90E2DB269090076FC97 /* Notes SwiftUI MasterClass */,
 				A42BA9142DB269090076FC97 /* Notes SwiftUI MasterClass Watch App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A42BA90D2DB269090076FC97 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A42BA9132DB269090076FC97 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -183,14 +123,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		A42BA9182DB269090076FC97 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A42BA9142DB269090076FC97 /* Notes SwiftUI MasterClass Watch App */;
-			targetProxy = A42BA9172DB269090076FC97 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		A42BA9202DB2690B0076FC97 /* Debug */ = {
@@ -368,37 +300,6 @@
 			};
 			name = Release;
 		};
-		A42BA9272DB2690B0076FC97 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 9PQRGV2T7U;
-				INFOPLIST_KEY_CFBundleDisplayName = "Notes SwiftUI MasterClass";
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Aranfononi.apps.Notes-SwiftUI-MasterClass";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		A42BA9282DB2690B0076FC97 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 9PQRGV2T7U;
-				INFOPLIST_KEY_CFBundleDisplayName = "Notes SwiftUI MasterClass";
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Aranfononi.apps.Notes-SwiftUI-MasterClass";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_VERSION = 5.0;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -416,15 +317,6 @@
 			buildConfigurations = (
 				A42BA9232DB2690B0076FC97 /* Debug */,
 				A42BA9242DB2690B0076FC97 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A42BA9262DB2690B0076FC97 /* Build configuration list for PBXNativeTarget "Notes SwiftUI MasterClass" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A42BA9272DB2690B0076FC97 /* Debug */,
-				A42BA9282DB2690B0076FC97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
