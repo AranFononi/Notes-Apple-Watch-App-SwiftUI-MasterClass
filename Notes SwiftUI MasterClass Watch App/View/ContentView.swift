@@ -13,25 +13,43 @@ struct ContentView: View {
     @State private var text: String = ""
     
     // MARK: - Function
+    func save() {
+        dump(notes)
+    }
+    
     var body: some View {
-        VStack {
-            HStack(alignment: .center, spacing: 6) {
-                TextField("Add New Note", text: $text)
-                
-                Button {
+        NavigationStack {
+            VStack {
+                HStack(alignment: .center, spacing: 6) {
+                    TextField("Add New Note", text: $text)
                     
-                } label: {
-                    Image(systemName: "plus.circle")
-                        .font(.system(size: 42, weight: .semibold))
+                    Button {
+                        // TextFiled not empty
+                        guard text.isEmpty == false else { return }
+                        // Create new note
+                        let note = Note(id: UUID(), text: text)
+                        // append new note
+                        notes.append(note)
+                        // make textfield empty
+                        text = ""
+                        // save note
+                        save()
                         
-                }
-                .fixedSize()
-                .buttonStyle(PlainButtonStyle())
-                .foregroundStyle(.accent)
-            } //: HStack
-            Spacer()
-        } //: VStack
-        .navigationTitle(Text("Notes"))
+                    } label: {
+                        Image(systemName: "plus.circle")
+                            .font(.system(size: 42, weight: .semibold))
+                        
+                    }
+                    .fixedSize()
+                    .buttonStyle(PlainButtonStyle())
+                    .foregroundStyle(.accent)
+                } //: HStack
+                Spacer()
+                Text("\(notes.count) notes")
+            } //: VStack
+            .navigationTitle("Notes")
+        } //: Navigation
+        
         
     }
 }
